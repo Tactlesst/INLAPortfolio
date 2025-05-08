@@ -1,2 +1,0 @@
-# IraNicole Portfolio
-IraNicole Portfolio
