@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journal Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="book">
+    <div class="page front">
+      <div class="content">
+        <h1>Hi, I'm Jane Doe</h1>
+        <p>Web Developer & Designer</p>
+        <button id="flipToBack">View Portfolio →</button>
+      </div>
+    </div>
+    <div class="page back">
+      <div class="content">
+        <h2>My Portfolio</h2>
+        <ul>
+          <li><strong>Project 1:</strong> E-commerce Website</li>
+          <li><strong>Project 2:</strong> Responsive Blog</li>
+          <li><strong>Project 3:</strong> Portfolio with 3D Flip</li>
+        </ul>
+        <button id="flipToFront">← Back</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const book = document.querySelector('.book');
+    document.getElementById('flipToBack').onclick = () => book.classList.add('flipped');
+    document.getElementById('flipToFront').onclick = () => book.classList.remove('flipped');
+  </script>
+</body>
+</html>
